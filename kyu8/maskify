@@ -1,0 +1,6 @@
+function maskify(cc) {
+  if (cc.length < 4) {
+    return cc
+  }
+  return new Array(cc.length - 3).join('#') + cc.slice(-4)
+}
